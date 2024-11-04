@@ -1,5 +1,4 @@
 import Image from "next/image";
-import profile from "../../public/file.png";
 import tailwind from "../../public/tailwind.png";
 import react from "../../public/react.png";
 import next from "../../public/next.svg";
@@ -13,20 +12,13 @@ export default function Home() {
         <div className="bg-gold w-44 h-1 rounded-full" />
         <div></div>
       </div>
-      <div className="flex items-end justify-center absolute w-[400px] h-[400px] bg-black/30 rounded-full">
+      <div className="hidden sm:flex items-end justify-center w-[400px] h-[400px] bg-no-repeat bg-contain bg-avatar rounded-full shadow-xl shadow-gold">
         <div className="flex items-end gap-4 absolute -bottom-20">
           <Image src={next} alt="Next" width={100} height={100} />
           <Image src={tailwind} alt="Tailwind" width={100} height={100} />
           <Image src={react} alt="React" width={100} height={100} />
         </div>
       </div>
-      <Image
-        src={profile}
-        alt="Langgeng Kanugrahan"
-        width={400}
-        height={400}
-        className=" rounded-full shadow-xl shadow-gold"
-      />
     </main>
   );
 }

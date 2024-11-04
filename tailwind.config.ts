@@ -8,8 +8,11 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      animation:{
-        'spin-slow': 'spin 7s linear infinite'
+      backgroundImage: {
+        avatar: "url('/file.png')",
+      },
+      animation: {
+        "spin-slow": "spin 7s linear infinite",
       },
       colors: {
         gold: "#FFD700",
