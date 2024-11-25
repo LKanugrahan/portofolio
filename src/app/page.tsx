@@ -1,23 +1,70 @@
-import Image from "next/image";
-import tailwind from "../../public/tailwind.png";
-import react from "../../public/react.png";
-import next from "../../public/next.svg";
+import Card from "@/components/cards/card.component";
 
 export default function Home() {
   return (
-    <main className="flex w-full justify-center relative">
-      <div className="absolute left-10 top-24 flex flex-col gap-4 z-10">
-        <p className="text-4xl leading-10">{`I'm`}</p>
-        <p className="text-5xl font-bold w-fit">Langgeng Kanugrahan</p>
-        <div className="bg-gold w-44 h-1 rounded-full" />
-        <div></div>
-      </div>
-      <div className="hidden sm:flex items-end justify-center w-[400px] h-[400px] bg-no-repeat bg-contain bg-avatar rounded-full shadow-xl shadow-gold">
-        <div className="flex items-end gap-4 absolute -bottom-20">
-          <Image src={next} alt="Next" width={100} height={100} />
-          <Image src={tailwind} alt="Tailwind" width={100} height={100} />
-          <Image src={react} alt="React" width={100} height={100} />
+    <main className="flex flex-col items-start gap-10 w-full px-10">
+      <div className="flex flex-col-reverse md:flex-row w-full gap-2 md:gap-20 justify-between xl:justify-center items-center relative">
+        <div className="mt-5 md:mt-0 md:hidden xl:block xl:absolute xl:left-2/3 xl:bottom-0">
+          <Card
+            className={{
+              w: "max-w-96",
+              h: "h-fit",
+              bgC: "bg-white",
+              borderC: "border-amber-400",
+              shadowC: "shadow-amber-400",
+            }}
+            clickable
+            href="/docs"
+          >
+            <div className="p-3">
+              <p className="text-lg text-neutral-900">
+                A Frontend Developer who is consistent in building web admin
+                with plain HTML and Tailwind.
+              </p>
+              <p className="text-lg text-neutral-900">
+                Always working with useForm, Yup validation, Redux Toolkit and
+                RTK Query. Wanna learn about these?{" "}
+                <span className="underline font-bold">Click the box!</span>
+              </p>
+            </div>
+          </Card>
         </div>
+        <div className="xl:absolute xl:right-1/2 xl:-translate-x-1/4 xl:top-1/2 xl:-translate-y-1/2 flex flex-col md:gap-4 z-10">
+          <div className="flex md:flex-col gap-2">
+            <p className=" text-xl sm:text-2xl md:text-4xl md:leading-10">{`I'm`}</p>
+            <p className="text-xl sm:text-2xl md:text-4xl lg:text-5xl md:font-bold w-fit">
+              Langgeng Kanugrahan
+            </p>
+          </div>
+
+          <div className="bg-amber-400 w-60 sm:w-72 md:w-40 lg:w-56 h-0.5 md:h-1 rounded-full" />
+        </div>
+        <div className="w-32 h-32 md:w-[200px] md:h-[200px] lg:w-[300px] xl:w-[400px] lg:h-[300px] xl:h-[400px] bg-no-repeat bg-contain bg-avatar rounded-full shadow-lg shadow-amber-400"></div>
+      </div>
+      <div className="hidden md:block xl:hidden w-full">
+        <Card
+          className={{
+            w: "w-full",
+            h: "h-fit",
+            bgC: "bg-white",
+            borderC: "border-amber-400",
+            shadowC: "shadow-amber-400",
+          }}
+          clickable
+          href="/docs"
+        >
+          <div className="p-3">
+            <p className="text-lg text-neutral-900">
+              A Frontend Developer who is consistent in building web admin with
+              plain HTML and Tailwind.
+            </p>
+            <p className="text-lg text-neutral-900">
+              Always working with useForm, Yup validation, Redux Toolkit and RTK
+              Query. Wanna learn about these?{" "}
+              <span className="underline font-bold">Click the box!</span>
+            </p>
+          </div>
+        </Card>
       </div>
     </main>
   );

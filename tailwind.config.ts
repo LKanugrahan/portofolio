@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        '3d':'3px 3px 0 0 var(--tw-shadow-color)',
+      },
       backgroundImage: {
         avatar: "url('/file.png')",
       },
@@ -15,15 +18,11 @@ const config: Config = {
         "spin-slow": "spin 7s linear infinite",
       },
       colors: {
-        gold: "#FFD700",
-        brown: "#714C32",
-        carbon: "#1C1C1C",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        roboto: ["var(--font-roboto)"],
-        handlee: ["var(--font-handlee)"],
+        nunito: ["var(--font-nunito)"],
       },
     },
   },
