@@ -39,7 +39,7 @@ export default function Home() {
 
           <div className="bg-amber-400 w-60 sm:w-72 md:w-40 lg:w-56 h-0.5 md:h-1 rounded-full" />
         </div>
-        <div className="relative w-32 h-32 bg-neutral-900 md:w-[200px] md:h-[200px] lg:w-[300px] xl:w-[400px] lg:h-[300px] xl:h-[400px] bg-no-repeat bg-contain bg-avatar rounded-full after:absolute after:w-32 after:h-32 md:after:w-[200px] md:after:h-[200px] lg:after:w-[300px] xl:after:w-[400px] lg:after:h-[300px] xl:after:h-[400px] after:rounded-full after:-z-10 after:box-content after:p-1 after:animate-border-spin tail"/>
+        <div className="relative w-32 h-32 bg-neutral-900 md:w-[200px] md:h-[200px] lg:w-[300px] xl:w-[400px] lg:h-[300px] xl:h-[400px] bg-no-repeat bg-contain bg-avatar rounded-full after:absolute after:w-32 after:h-32 md:after:w-[200px] md:after:h-[200px] lg:after:w-[300px] xl:after:w-[400px] lg:after:h-[300px] xl:after:h-[400px] after:rounded-full after:-z-10 after:box-content after:p-0.5 after:animate-border-spin tail"/>
       </div>
       <div className="hidden md:block xl:hidden w-full">
         <Card
