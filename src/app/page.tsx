@@ -2,7 +2,7 @@ import Card from "@/components/cards/card.component";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-start gap-10 w-full px-10">
+    <main className="flex flex-col items-start gap-10 w-full px-1 sm:px-10 py-5">
       <div className="flex flex-col-reverse md:flex-row w-full gap-2 md:gap-20 justify-between xl:justify-center items-center relative">
         <div className="mt-5 md:mt-0 md:hidden xl:block xl:absolute xl:left-2/3 xl:bottom-0">
           <Card

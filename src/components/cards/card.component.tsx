@@ -6,6 +6,7 @@ const Card = ({
   href,
   className,
   clickable = false,
+  target=""
 }: {
   children: React.ReactNode;
   href?: string;
@@ -16,8 +17,8 @@ const Card = ({
     borderC: string;
     shadowC: string;
   };
-
   clickable?: boolean;
+  target?: React.HTMLAttributeAnchorTarget
 }) => {
   return (
     <div
@@ -31,7 +32,7 @@ const Card = ({
           : ""
       }`}
     >
-      {clickable ? <Link href={href!}>{children}</Link> : children}
+      {clickable ? <Link href={href!} target={target}>{children}</Link> : children}
     </div>
   );
 };
