@@ -6,33 +6,29 @@ const Card = ({
   href,
   className,
   clickable = false,
-  target=""
+  target = "",
 }: {
   children: React.ReactNode;
   href?: string;
-  className: {
-    w: string;
-    h: string;
-    bgC: string;
-    borderC: string;
-    shadowC: string;
-  };
+  className: string;
   clickable?: boolean;
-  target?: React.HTMLAttributeAnchorTarget
+  target?: React.HTMLAttributeAnchorTarget;
 }) => {
   return (
     <div
-      className={`${className.bgC} ${className.w} ${
-        className.h
-      } rounded-xl border-2 ${className.borderC} shadow-3d ${
-        className.shadowC
-      } ${
+      className={`${className} rounded-xl border-2 shadow-3d ${
         clickable
           ? "cursor-pointer transition hover:translate-x-1 hover:translate-y-1 hover:shadow-none active:scale-[98%]"
           : ""
       }`}
     >
-      {clickable ? <Link href={href!} target={target}>{children}</Link> : children}
+      {clickable ? (
+        <Link href={href!} target={target}>
+          {children}
+        </Link>
+      ) : (
+        children
+      )}
     </div>
   );
 };

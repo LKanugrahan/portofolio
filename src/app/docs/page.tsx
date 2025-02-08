@@ -6,13 +6,7 @@ const Docs = () => {
   return (
     <main className="sm:w-2/3 w-full px-1 py-5">
       <Card
-        className={{
-          w: "w-full",
-          h: "h-full",
-          bgC: "bg-neutral-400",
-          borderC: "border-neutral-600",
-          shadowC: "shadow-neutral-600",
-        }}
+        className="w-full h-full bg-neutral-400 border-neutral-600 shadow-neutral-600"
       >
         <div className="flex flex-col justify-center items-center gap-5 py-3 px-2">
           <p className="text-5xl font-bold text-neutral-900">Attention</p>
@@ -23,13 +17,7 @@ const Docs = () => {
             {menus.map((value, index) => (
               <Card
                 key={index}
-                className={{
-                  w: "max-w-96",
-                  h: "h-fit",
-                  bgC: "bg-blue-400",
-                  borderC: "border-blue-600",
-                  shadowC: "shadow-blue-600",
-                }}
+                className="max-w-96 h-fit bg-blue-400 border-blue-600 shadow-blue-600"
                 clickable
                 href={value.href}
               >

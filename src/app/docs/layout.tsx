@@ -5,5 +5,5 @@ export default function DocsLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <section className="flex justify-center">{children}</section>;
+  return <section className="h-full flex items-center justify-center">{children}</section>;
 }

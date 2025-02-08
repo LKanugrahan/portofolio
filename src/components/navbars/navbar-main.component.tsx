@@ -4,20 +4,14 @@ import Card from "../cards/card.component";
 
 const MainNavbar = () => {
   return (
-    <nav className="sticky top-0 h-[8%] flex items-center justify-between bg-neutral-900 py-2 px-5 z-20">
+    <nav className="fixed w-full top-0 h-[8%] flex items-center justify-between bg-neutral-900 py-2 px-5 z-20">
       <Link href="/" className="font-bold text-3xl">
         <span className="text-amber-400">L</span> Dev
         <span className="text-amber-400">.</span>
       </Link>
       <div className="flex gap-2">
         <Card
-          className={{
-            w: "w-fit",
-            h: "h-fit",
-            bgC: "bg-amber-400",
-            borderC: "border-amber-600",
-            shadowC: "shadow-amber-600",
-          }}
+          className="w-fit h-fit bg-amber-400 border-amber-600 shadow-amber-600"
           clickable
           href="https://tako.id/"
           target="_blank"
@@ -28,13 +22,7 @@ const MainNavbar = () => {
           </p>
         </Card>
         <Card
-          className={{
-            w: "w-fit",
-            h: "h-fit",
-            bgC: "bg-emerald-400",
-            borderC: "border-emerald-600",
-            shadowC: "shadow-emerald-600",
-          }}
+          className="w-fit h-fit bg-emerald-400 border-emerald-600 shadow-emerald-600"
           clickable
           href="https://wa.me/6282180881420"
           target="_blank"
