@@ -19,7 +19,7 @@ const config: Config = {
         },
       },
       boxShadow: {
-        "3d": "3px 3px 0 0 var(--tw-shadow-color)",
+        "3d": "2px 2px 0 0 var(--tw-shadow-color)",
       },
       backgroundImage: {
         avatar: "url('/file.png')",
