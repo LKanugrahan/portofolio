@@ -10,6 +10,7 @@ const EtherButton = () => {
       <p
         onClick={() => {
           handleConnect();
+          console.log('testing')
         }}
       >
         Connect
