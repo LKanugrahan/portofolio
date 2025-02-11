@@ -6,11 +6,14 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "hc": "npx hardhat compile",
+    "hn": "npx hardhat node",
+    "ht": "npx hardhat test"
   },
   "dependencies": {
     "@next/font": "^14.2.15",
-    "@nomicfoundation/hardhat-network-helpers": "^1.0.12",
+    "ethers": "^6.13.5",
     "next": "15.0.2",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",

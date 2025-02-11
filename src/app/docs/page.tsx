@@ -6,7 +6,7 @@ const Docs = () => {
   return (
     <main className="sm:w-2/3 w-full px-1 py-5">
       <Card
-        className="w-full h-full bg-neutral-400 border-neutral-600 shadow-neutral-600"
+        className="w-full h-full bg-white border-blue-400 shadow-blue-400"
       >
         <div className="flex flex-col justify-center items-center gap-5 py-3 px-2">
           <p className="text-5xl font-bold text-neutral-900">Attention</p>
