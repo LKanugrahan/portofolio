@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${nunito.variable} text-white font-nunito bg-neutral-900 antialiased h-screen w-screen flex flex-col overflow-hidden`}
+        className={`${nunito.variable} text-white font-nunito bg-neutral-900 antialiased h-screen w-screen flex flex-col`}
       >
         <MainNavbar />
         {children}
