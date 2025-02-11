@@ -6,16 +6,15 @@ const EtherButton = () => {
   const { owner, handleConnect } = useEther();
 
   return (
-    <div>
+    <div className="text-black">
       <p
         onClick={() => {
           handleConnect();
-          console.log('testing')
         }}
       >
         Connect
       </p>
-      {owner}
+      Owner:{owner}
     </div>
   );
 };

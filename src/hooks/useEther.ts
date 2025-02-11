@@ -11,21 +11,16 @@ import { useState } from "react";
 const useEther = () => {
   const [owner, setOwner] = useState<string>();
   const handleConnect = async () => {
-    console.log('testingan connect')
-    console.log((window as any).ethereum)
     if ((window as any).ethereum) {
       const provider = new ethers.BrowserProvider((window as any).ethereum);
+      const signer = await provider.getSigner();
       const contract = new ethers.Contract(
         addressContract,
         addressContractABI,
-        provider
+        signer
       );
-      const owner = await contract?.getOwner();
-      setOwner(owner);
-      console.log('testingan dalem if')
-
-    }else {
-      console.error("Ethereum object tidak ditemukan di window.");
+      const res = await contract?.getOwner();
+      setOwner(res);
     }
   };
 
