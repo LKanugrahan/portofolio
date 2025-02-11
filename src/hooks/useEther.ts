@@ -11,6 +11,7 @@ import { useState } from "react";
 const useEther = () => {
   const [owner, setOwner] = useState<string>();
   const handleConnect = async () => {
+    console.log('testingan connect')
     if ((window as any).ethereum) {
       const provider = new ethers.BrowserProvider((window as any).ethereum);
       const contract = new ethers.Contract(
@@ -20,6 +21,8 @@ const useEther = () => {
       );
       const owner = await contract?.getOwner();
       setOwner(owner);
+      console.log('testingan dalem if')
+
     }
   };
 
