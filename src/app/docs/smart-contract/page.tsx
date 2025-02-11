@@ -1,15 +1,10 @@
-
-import EtherButton from "@/components/button/ether-button";
-import Card from "@/components/cards/card.component";
+import EtherCard from "@/components/smart-contract/cards/ether-card.component";
 import React from "react";
 
 const Docs = () => {
   return (
-    <main className="w-full h-full p-4 pt-16">
-      <Card
-        className="w-full h-full bg-white border-blue-400 shadow-blue-400"
-      ><EtherButton/>
-      </Card>
+    <main className="w-full h-full flex justify-center items-center p-1">
+      <EtherCard/>
     </main>
   );
 };
