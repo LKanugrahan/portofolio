@@ -24,6 +24,8 @@ const useEther = () => {
       setOwner(owner);
       console.log('testingan dalem if')
 
+    }else {
+      console.error("Ethereum object tidak ditemukan di window.");
     }
   };
 
