@@ -8,6 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "hc": "npx hardhat compile",
+    "hcl": "npx hardhat clean",
+    "hd": "npx hardhat ignition deploy ./ignition/modules/Address.ts --network sepolia",
     "hn": "npx hardhat node",
     "ht": "npx hardhat test"
   },

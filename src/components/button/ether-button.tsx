@@ -3,7 +3,7 @@ import useEther from "@/hooks/useEther";
 import React from "react";
 
 const EtherButton = () => {
-  const { owner, handleConnect } = useEther();
+  const { data, handleConnect } = useEther();
 
   return (
     <div className="text-black">
@@ -14,7 +14,8 @@ const EtherButton = () => {
       >
         Connect
       </p>
-      Owner:{owner}
+      Owner:{data?.[0]}
+      Owner:{data?.[1]}
     </div>
   );
 };
