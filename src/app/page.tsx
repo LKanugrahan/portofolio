@@ -2,7 +2,7 @@ import Card from "@/components/cards/card.component";
 
 export default function Home() {
   return (
-    <main className="sm:px-5 h-full flex items-center justify-center gap-2 overflow-hidden">
+    <main className="sm:px-5 flex-1 flex items-center justify-center gap-2 overflow-hidden">
       <p className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-9xl font-bold text-start">
         Learn more<span className="block">Keep it forever</span>
       </p>

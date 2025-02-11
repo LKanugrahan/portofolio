@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.tail::after {
-  background-image: conic-gradient(#fbbf24, transparent 30%),
-    conic-gradient(from 180deg, #fbbf24, transparent 30%);
+html, body, #__next {
+  height: 100%;
 }
