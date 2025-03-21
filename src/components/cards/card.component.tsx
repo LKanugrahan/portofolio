@@ -8,6 +8,7 @@ const Card = ({
   clickable = false,
   disabled,
   target = "",
+  onClick
 }: {
   children: React.ReactNode;
   href?: string;
@@ -15,6 +16,7 @@ const Card = ({
   disabled?: boolean;
   clickable?: boolean;
   target?: React.HTMLAttributeAnchorTarget;
+  onClick?: () => void;
 }) => {
   return (
     <div
@@ -23,6 +25,7 @@ const Card = ({
           ? "cursor-pointer transition hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none active:scale-[98%]"
           : disabled?"cursor-default bg-gray-400 border-gray-600 shadow-gray-600 text-gray-600":""
       }`}
+      onClick={onClick}
     >
       {clickable && href ? (
         <Link href={href} target={target}>

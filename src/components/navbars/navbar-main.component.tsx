@@ -4,7 +4,7 @@ import Card from "../cards/card.component";
 
 const MainNavbar = () => {
   return (
-    <nav className="fixed w-full top-0 h-[8%] flex items-center justify-between bg-neutral-900 py-2 px-5 z-20">
+    <nav className="fixed w-full top-0 h-16 flex items-center justify-between bg-neutral-900/50 py-2 px-5 z-20">
       <Link href="/" className="font-bold text-3xl">
         <span className="text-amber-400">L</span> Dev
         <span className="text-amber-400">.</span>

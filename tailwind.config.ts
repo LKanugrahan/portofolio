@@ -17,6 +17,20 @@ const config: Config = {
             transform: "rotate(-360deg)",
           },
         },
+        "bounce-high": {
+          "0%": {
+            transform: "translateY(-75%)",
+            animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateY(75%)",
+            animationTimingFunction: "cubic-bezier(0, 0, 0.2, 1)",
+          },
+          "100%": {
+            transform: "translateY(-75%)",
+            animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
+          },
+      }
       },
       boxShadow: {
         "3d": "2px 2px 0 0 var(--tw-shadow-color)",
@@ -25,6 +39,7 @@ const config: Config = {
         avatar: "url('/file.png')",
       },
       animation: {
+        "bounce-high": "bounce-high 1s infinite",
         "spin-slow": "spin 7s linear infinite",
         "border-spin":"border-spin 7s linear infinite"
       },

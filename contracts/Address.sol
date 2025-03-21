@@ -3,21 +3,21 @@ pragma solidity ^0.8.28;
 
 import "hardhat/console.sol";
 
-error OwnershipErr(address owner);
+// error OwnershipErr(address owner);
 
 contract Address {
-    address payable public owner;
+    // address payable public owner;
 
-    constructor() {
-        owner = payable(msg.sender);
-    }
+    // constructor() {
+    //     owner = payable(msg.sender);
+    // }
 
-    modifier OwnershipMod() {
-        if (msg.sender != owner) revert OwnershipErr(owner);
-        _;
-    }
+    // modifier OwnershipMod() {
+    //     if (msg.sender != owner) revert OwnershipErr(owner);
+    //     _;
+    // }
 
-    function getAddressBalance() public view OwnershipMod returns (address, uint256) {
-        return (owner,owner.balance);
+    function getAddressBalance() public view returns (address, uint256) {
+        return (msg.sender, msg.sender.balance);
     }
 }
